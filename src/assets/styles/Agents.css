@@ -1,55 +1,125 @@
+/* ===========================
+   AGENTS
+=========================== */
+
 .agents{
-    padding:100px 8%;
-    background:#fff;
+    padding:120px 8%;
+    background:#f8f9fb;
 }
 
 .agents-title{
     text-align:center;
-    margin-bottom:60px;
+    margin-bottom:70px;
 }
 
 .agents-title span{
-    color:#C9A227;
-    font-weight:600;
+    color:#c9a227;
+    font-size:15px;
+    font-weight:700;
+    letter-spacing:2px;
     text-transform:uppercase;
 }
 
 .agents-title h2{
-    font-size:42px;
-    margin:12px 0;
-    color:#111;
+    font-size:48px;
+    color:#111827;
+    margin:18px 0;
 }
 
 .agents-title p{
-    max-width:650px;
+    max-width:700px;
     margin:auto;
-    color:#666;
+    color:#6b7280;
     line-height:1.8;
 }
 
+/* ===========================
+   GRID
+=========================== */
+
 .agents-container{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
     gap:35px;
 }
 
+/* ===========================
+   CARD
+=========================== */
+
 .agent-card{
     background:#fff;
-    border-radius:20px;
+    border-radius:25px;
     overflow:hidden;
-    box-shadow:0 12px 30px rgba(0,0,0,.08);
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
     transition:.4s;
 }
 
 .agent-card:hover{
-    transform:translateY(-10px);
+    transform:translateY(-12px);
+    box-shadow:0 25px 60px rgba(0,0,0,.15);
 }
 
-.agent-card img{
-    width:100%;
-    height:340px;
-    object-fit:cover;
+/* ===========================
+   IMAGE
+=========================== */
+
+.agent-image{
+    position:relative;
+    overflow:hidden;
 }
+
+.agent-image img{
+    width:100%;
+    height:420px;
+    object-fit:cover;
+    transition:.6s;
+}
+
+.agent-card:hover img{
+    transform:scale(1.08);
+}
+
+/* ===========================
+   SOCIALS
+=========================== */
+
+.agent-socials{
+    position:absolute;
+    bottom:20px;
+    left:50%;
+    transform:translateX(-50%);
+    display:flex;
+    gap:12px;
+    opacity:0;
+    transition:.4s;
+}
+
+.agent-card:hover .agent-socials{
+    opacity:1;
+}
+
+.agent-socials a{
+    width:45px;
+    height:45px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    text-decoration:none;
+    color:#fff;
+    background:#c9a227;
+    transition:.3s;
+}
+
+.agent-socials a:hover{
+    background:#111827;
+    transform:translateY(-5px) rotate(360deg);
+}
+
+/* ===========================
+   CONTENT
+=========================== */
 
 .agent-content{
     padding:30px;
@@ -57,48 +127,77 @@
 }
 
 .agent-content h3{
-    font-size:24px;
+    font-size:26px;
+    color:#111827;
     margin-bottom:10px;
-    color:#111;
 }
 
 .agent-content p{
-    color:#777;
+    color:#6b7280;
     margin-bottom:25px;
 }
 
-.agent-socials{
-    display:flex;
-    justify-content:center;
-    gap:15px;
-}
+/* ===========================
+   BUTTON
+=========================== */
 
-.agent-socials a{
-    width:45px;
-    height:45px;
-    border-radius:50%;
-    background:#f5f5f5;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:#C9A227;
+.agent-btn{
+    border:none;
+    background:#c9a227;
+    color:#fff;
+    padding:14px 34px;
+    border-radius:50px;
+    cursor:pointer;
+    font-weight:600;
+    font-size:15px;
     transition:.3s;
 }
 
-.agent-socials a:hover{
-    background:#C9A227;
-    color:#fff;
-    transform:translateY(-5px);
+.agent-btn:hover{
+    background:#111827;
+    transform:translateY(-4px);
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:992px){
+
+    .agents-title h2{
+        font-size:38px;
+    }
+
 }
 
 @media(max-width:768px){
 
     .agents{
-        padding:80px 6%;
+        padding:90px 6%;
     }
 
     .agents-title h2{
         font-size:32px;
+    }
+
+    .agent-image img{
+        height:360px;
+    }
+
+}
+
+@media(max-width:480px){
+
+    .agents-title h2{
+        font-size:28px;
+    }
+
+    .agent-content{
+        padding:22px;
+    }
+
+    .agent-image img{
+        height:320px;
     }
 
 }
