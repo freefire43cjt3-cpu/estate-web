@@ -1,0 +1,94 @@
+.hero {
+  width: 100%;
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80")
+    center/cover no-repeat;
+  position: relative;
+}
+
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.55);
+
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  max-width: 650px;
+  margin-left: 8%;
+  color: white;
+}
+
+.hero-subtitle {
+  color: #c084fc;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.hero-content h1 {
+  font-size: 65px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.hero-text {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #ddd;
+  margin-bottom: 35px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.btn-primary {
+  background: #7c3aed;
+  color: white;
+  border: none;
+  padding: 15px 35px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.btn-primary:hover {
+  background: #6d28d9;
+}
+
+.btn-secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 15px 35px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.btn-secondary:hover {
+  background: white;
+  color: black;
+}
+
+@media (max-width:768px) {
+  .hero-content {
+    margin: 0 25px;
+    text-align: center;
+  }
+
+  .hero-content h1 {
+    font-size: 42px;
+  }
+
+  .hero-buttons {
+    justify-content: center;
+    flex-direction: column;
+  }
+}
