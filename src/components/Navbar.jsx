@@ -118,24 +118,11 @@ function Navbar() {
             }
             >
 
-              <a href="#allproperties">
+              <a href="#properties">
                 <FaHome/>
                 All Properties
               </a>
 
-              <a href="#apartments">
-                <FaCity/>
-                Apartments
-              </a>
-
-              <a href="#luxury-villas">
-                <FaKey/>
-                Luxury Villas
-              </a>
-
-              <a href="#properties">
-                Commercial
-              </a>
 
 
             </div>
