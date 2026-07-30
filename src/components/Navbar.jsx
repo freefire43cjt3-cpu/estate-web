@@ -1,18 +1,18 @@
 import { useState, useEffect } from "react";
-import {
-  FaBars,
-  FaTimes,
-  FaBuilding,
-  FaSearch,
-  FaHeart,
-  FaMoon,
-  FaChevronDown,
-  FaHome,
-  FaCity,
-  FaKey,
-  FaUsers,
-  FaQuestionCircle,
-} from "react-icons/fa";
+// import {
+//   FaBars,
+//   FaTimes,
+//   FaBuilding,
+//   FaSearch,
+//   FaHeart,
+//   FaMoon,
+//   FaChevronDown,
+//   FaHome,
+//   FaCity,
+//   FaKey,
+//   FaUsers,
+//   FaQuestionCircle,
+// } from "react-icons/fa";
 
 import "../assets/styles/Navbar.css";
 
